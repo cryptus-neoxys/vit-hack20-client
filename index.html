@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Certificate Generator</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script type="text/javascript" src="app.js" async defer></script>
+	</head>
+	<body>
+		<header>
+			<!-- NAV BAR FLEX: row-->
+
+			<nav>
+				<!-- USER -->
+				<div class="user">
+					<h2>
+						<i class="fa fa-user" aria-hidden="true"></i> Ishan
+						Bhardwaj
+					</h2>
+				</div>
+
+				<!-- LOGOUT -->
+				<div class="logout">
+					<h2>
+						<a href="/"
+							><i class="fa fa-sign-out" aria-hidden="true"></i
+						></a>
+					</h2>
+				</div>
+			</nav>
+		</header>
+
+		<!-- MAIN CONTAINER  FLEX: row-->
+
+		<main>
+			<!-- LEFT CONTAINER  FLEX: column-->
+			<div id="main-left">
+				<!-- SLOGAN -->
+				<div id="slogan">
+					<p>Put your details on the certificate on a go!</p>
+				</div>
+
+				<!-- FILE UPLOAD BUTTON -->
+				<div class="button-wrap">
+					<label class="button" for="upload">Upload Your File</label>
+					<input id="upload" type="file" style="display: none" />
+				</div>
+
+				<!-- TEMPLATES -->
+				<div id="templates">templates...</div>
+			</div>
+
+			<!-- RIGHT CONTAINER FLEX: column-->
+			<div id="main-right">
+				<div>preview</div>
+			</div>
+		</main>
+	</body>
+</html>
