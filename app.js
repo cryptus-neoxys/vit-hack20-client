@@ -1,17 +1,34 @@
 let tempImgs = document.querySelector('.temp-imgs');
+let prevtext = document.querySelector('#prev-text');
 const previewBox = document.getElementById('Preview-box');
-console.log(previewBox);
-let certificateList = ['cert', 'cert2'];
+
+
+var certificateList = []
+for(i=0; i<52; i++) {
+	certificateList[i] = `cert${i+1}`;
+}
+
+console.log(certificateList);
+
+
+let sourcelist = []
+for(i=1; i<certificateList.length+1; i++) {
+	sourcelist[i] = `./Templates/cert${i}.png`;
+}
+
+
 
 let certificateName = '';
 
 tempImgs.innerHTML = '';
-for (i = 0; i < certificateList.length; ++i) {
-	tempImgs.innerHTML += `<img id=${i} onclick="certNameHandler(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv5BKVXYRl8jMWGE2tHCzrai4FkWwuBDNG2Q&usqp=CAU" />`;
+for (i = 1; i < certificateList.length+1; ++i) {
+	sr = sourcelist[i]
+	tempImgs.innerHTML += `<img id=${i} onclick="certNameHandler(this)" src="${sr}" />`;
 }
 
+prevtext.innerHTML = '';
 function certNameHandler(element) {
 	certificateName = certificateList[element.id];
-	previewBox.style.background = `url(${element.src})`;
-	// console.log(element.src.toString());
+	previewBox.style.backgroundImage = `url(${element.src})`;
+	prevtext.innerHTML = `<i>This looks nice </i>&#9749;`
 }

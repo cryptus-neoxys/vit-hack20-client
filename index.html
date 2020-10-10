@@ -19,23 +19,23 @@
 		<header>
 			<!-- NAV BAR FLEX: row-->
 
-			<nav>
+			<na>
 				<!-- USER -->
-				<div class="user">
+				<!-- <div class="user">
 					<h2>
 						<i class="fa fa-user" aria-hidden="true"></i> 
 						Ishan Bhardwaj
 					</h2>
-				</div>
+				</div> -->
 
 				<!-- LOGOUT -->
-				<div class="logout">
+				<!-- <div class="logout">
 					<h2>
 						<a href="/"
 							><i class="fa fa-sign-out" aria-hidden="true"></i
 						></a>
 					</h2>
-				</div>
+				</div> -->
 			</nav>
 		</header>
 
@@ -51,31 +51,37 @@
 
 				<!-- FILE UPLOAD BUTTON -->
 				<div class="button-wrap">
-					<label class="button" for="upload">Upload Your File</label>
-					<input id="upload" type="file" style="display: none" />
+					<form method="POST" action="/" enctype="multipart/form-data">
+						<label class="button" for="upload">Upload Your File</label>
+						<input id="upload" name="userExcel" type="file" style="display: none" />
+					</form>
 				</div>
 
 				<!-- TEMPLATES -->
 				<div id="templates">
 					<p id="heading">Choose a Template</p>
 					<div class="temp-imgs">
+					<!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv5BKVXYRl8jMWGE2tHCzrai4FkWwuBDNG2Q&usqp=CAU" />
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLFxywLay231tAh0Hnimljr2Zwk64ZdneFow&usqp=CAU" />
 					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv5BKVXYRl8jMWGE2tHCzrai4FkWwuBDNG2Q&usqp=CAU" />
 					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv5BKVXYRl8jMWGE2tHCzrai4FkWwuBDNG2Q&usqp=CAU" />
 					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv5BKVXYRl8jMWGE2tHCzrai4FkWwuBDNG2Q&usqp=CAU" />
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv5BKVXYRl8jMWGE2tHCzrai4FkWwuBDNG2Q&usqp=CAU" />
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv5BKVXYRl8jMWGE2tHCzrai4FkWwuBDNG2Q&usqp=CAU" />
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv5BKVXYRl8jMWGE2tHCzrai4FkWwuBDNG2Q&usqp=CAU" />
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv5BKVXYRl8jMWGE2tHCzrai4FkWwuBDNG2Q&usqp=CAU" /> -->
 					</div>
 				</div>
 			</div>
 
 			<!-- RIGHT CONTAINER FLEX: column-->
 			<div id="main-right">
+				<div class="stick">
 				<p id="heading" class="h-left">Certificate Preview</p>
-				<div id="Preview-box"></div>
+				<div id="Preview-box">
+					<div id="prev-text" style="padding: 1em;"></div>
+				</div>
 				<div class="button-wrap down-butt">
 					<label class="button">Download Your File</label>
 				</div>
+			</div>
 			</div>
 		</main>
 	</body>
