@@ -1,0 +1,256 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	min-width: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 450;
+	color: #484a4b;
+	background-image: url(./repeated-square.png);
+
+
+	/* --stripe: #cfd8dc;
+  --bg: #e1e1e1;
+  background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+    linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: var(--stripe); */
+
+
+}
+
+/* nav {
+	font-weight: 400;
+	padding: 1rem 5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #484a4b;
+	box-shadow: 0px 4px 0 #40c0ff;
+	--stripe: #cfd8dc;
+  --bg: #e1e1e1;
+  background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+    linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: var(--stripe);
+} */
+
+
+/* }
+@media only screen and (max-width: 890px) {
+	nav {
+		padding: 1rem 17%;
+	}
+}
+nav div h2 {
+	font-weight: 500;
+}
+nav i {
+	color: #40c0ff;
+} */
+
+main {
+	padding: 1rem 0;
+	margin: 2rem auto 0;
+	min-height: 80vh;
+	width: 90vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+main div {
+	min-width: 400px;
+	max-width: 45vw;
+}
+ 
+/* @media only screen and(min-width:700px) and (max-width:890px) {
+	main div {
+		max-width: 100vw !important;
+	}
+} */
+
+/* #main-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+} */
+#main-left * {
+	margin-bottom: 2rem;
+}
+#slogan {
+	margin-top: 5px;
+	font-size: 2.15rem;
+	margin-bottom: 1em;
+}
+#heading {
+	font-size: 2.15rem;
+}
+.h-left {
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	#slogan {
+		font-size: 2.45em;
+	}
+	#heading {
+		font-size: 2.45rem;
+	}
+	.button {
+		font-size: 2.2em;
+	}
+}
+
+@media only screen and (max-width: 890px) {
+	.h-left {
+		text-align: left;
+		margin-top: 1.5em;
+	}
+}
+
+input[type='file'] {
+	font-size: 17px;
+	color: #ffffff;
+}
+.button-wrap {
+	position: relative;
+	width: -webkit-fill-available;
+	margin-bottom: 3em !important;
+}
+.button {
+	display: inline-block;
+	background-color: #26b7ff;
+	border-radius: 10px;
+	/*border: 4px double #cccccc;*/
+	color: #ffffff;
+	text-align: center;
+	font-size: 20px;
+	padding: 20px 44px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	outline: none;
+	appearance: none;
+}
+.button:hover {
+	background-color: #00ab97;
+}
+/* .fa-sign-out:hover {
+	color: #00ab97;
+	font-size: 1.15em;
+} */
+#Preview-box {
+
+	--stripe: #dee6e9;
+	--bg: #e1e1e1;
+  
+
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+  	background-size: cover;
+	margin-top: 1.5em;
+	/* height: 405.48px;
+	width: 612px; */
+	width: 527.04px;
+	height: 405.48px;
+	/* background: #FFFFFF 0% 0% no-repeat padding-box; */
+	box-shadow: 0px 5px 36px #00000029;
+	opacity: 1;
+	text-align: center;
+}
+
+#Preview-box:hover {
+	/* width: 614px;
+	height: 407px; */
+	width: 532.915064px;
+	height: 410px;
+	margin-left: -0.5%;
+}
+
+.down-butt {
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+.temp-imgs {
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	grid-gap: 0.5em;
+}
+
+.temp-imgs img {
+	width: 100%;
+	margin-bottom: 0px !important;
+}
+
+.temp-imgs:hover {
+	grid-gap: 0.8em;
+}
+
+.temp-imgs img:hover {
+	cursor: pointer;
+	width: 110%;
+	margin-left: -5%;
+}
+
+@media only screen and (max-width: 1170px) {
+	#Preview-box {
+		background-color: #484a4bcc;
+		/* background-color: var(--stripe); */
+		background-size: contain;
+	}
+}
+
+@media only screen and (min-width: 1020px) {
+	#Preview-box {
+		color: transparent;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	#Preview-box {
+		color: white;
+		font-size: large;
+	}
+}
+
+@media only screen and (min-width: 890px) {
+	.stick {
+		position: fixed;
+		top: 0;
+		margin: 7em 18em 0 -0.5em;
+	}
+}
+
+@media only screen and (min-width: 1030px) {
+	.stick {
+		position: fixed;
+		top: 0;
+		margin: 7em 18em 0 -4em !important;
+	}
+}
+
+.fin-but {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.upup {
+	max-width: 300px;
+	height: 70px;
+}
