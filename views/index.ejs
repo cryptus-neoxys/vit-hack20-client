@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <% temp.forEach(function(temp){%>
+        <div>
+            <img src="<%= temp.imagePath %>" alt="#">
+        </div>
+        <a href="/temp/<%= temp._id%>"><h4>Download</h4></a>
+    <%}); %>
+</body>
+<script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+<script src="../FileSaver.js"></script>
+
+<script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+</html>
